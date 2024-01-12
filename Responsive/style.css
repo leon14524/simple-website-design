@@ -1,9 +1,93 @@
 /* work senc font */
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:ital,wght@0,700;0,800;1,400&family=Poppins:wght@300;400;500;600;700&family=Work+Sans:wght@200;400;600;700;800&display=swap');
 
+  /* sheard styles */
   *{
         font-family: 'Lato', sans-serif;
         font-family: 'Open Sans', sans-serif;
         font-family: 'Poppins', sans-serif;
         font-family: 'Work Sans', sans-serif;
+  }
+  .btn-primary{
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+
+  }
+  /* header styles */
+  header{
+     background: rgba(255, 144, 14, 0.10);
+     padding: 50px 240px;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-title{
+    color: var(--Dark-01, #131313);
+    font-size: 2.8rem;
+    font-weight: 700;
+    }
+  nav > ul{
+    display: flex;
+  }
+  nav > ul > li {
+    margin-right: 50px;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  nav > ul > li > a{
+    text-decoration: none;
+    color: var(--Dark-02, #424242);
+  }
+  /* banner styles */
+
+    
+  .banner-content{
+    max-width: 800px;
+   text-align: center;
+   margin: 0 auto;
+  }
+  .banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: color:  #131313;
+  }
+  .banner-description{
+    color: var(--Dark-03, #727272);
+  }
+  .banner > img{
+    margin-top: 20px;
+   width: 100%;
+  }
+  /* respossive midea query */
+ /* respossive for mobile */
+  @media screen and (max-width:576px) {
+    header{
+        padding:20px;
+     }
+
+     nav{
+        flex-direction: column;
+        
+      }  
+  }
+
+  /* responsive for tablet */
+  @media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
   }
