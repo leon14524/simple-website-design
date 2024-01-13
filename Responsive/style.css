@@ -19,6 +19,10 @@
     border: 0;
 
   }
+.primary-color{
+    color:  #727272;
+    
+}
   /* header styles */
   header{
      background: rgba(255, 144, 14, 0.10);
@@ -61,33 +65,77 @@
     font-weight: 700;
     color: color:  #131313;
   }
-  .banner-description{
-    color: var(--Dark-03, #727272);
-  }
+
   .banner > img{
     margin-top: 20px;
    width: 100%;
   }
-  /* respossive midea query */
+
+
+  /* main styles */
+  main{
+    max-width:1440px; 
+   margin: 70px auto;
+  }
+
+  /* teems-styles */
+  .teem-conteinar{
+    display: flex;
+    align-items: center;
+  }
+  .teem-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+  }
+  .teems-content{
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .teem-title{
+    font-size: 2.8rem;
+  }
+  .teem-title .quick-list{
+    color: #727272;
+    font-weight: 500;
+  }
+  .teem-title .of-our{
+    color: #131313;
+    font-weight: 700;
+  }
+  .teem-title .Features{
+    color:#FF900E;
+    font-weight: 700;
+  }
+
+    /* respossive midea query */
+
+
  /* respossive for mobile */
-  @media screen and (max-width:576px) {
-    header{
-        padding:20px;
-     }
+ @media screen and (max-width:576px) {
+  header{
+      padding:20px;
+   }
 
-     nav{
-        flex-direction: column;
-        
-      }  
-  }
+   nav,.teem-conteinar {
+      flex-direction: column;   
+    }  
+    .teem-img{
+      grid-template-columns: 1fr;
+    }
+    .teems-content{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+}
 
-  /* responsive for tablet */
-  @media screen and (min-width:576px) and (max-width:960px) {
-    header{
-        padding: 50px;
-    }
-    nav{
-        flex-direction: column;
-    }
-    
+/* responsive for tablet */
+@media screen and (min-width:576px) and (max-width:960px) {
+  header{
+      padding: 50px;
   }
+  nav, .teem-conteinar {
+      flex-direction: column;
+  }
+  
+}
